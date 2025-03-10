@@ -82,19 +82,39 @@ Use String.fromCharCode to swap these characters and create a new string: "haunc
 Assign the result to a variable named swappedString.
 
 */
+//Exercise 1
+let inputString = "Hi" ;
+let sumCodePoints = inputString.charCodeAt(0) + inputString.charCodeAt(1);
+console.log("Exercise 1: " + sumCodePoints) ;
+// Exercise 2
+let codePoint1 = 65 ;
+let codePoint2 = 66 ;
+let combinedString = String.fromCharCode(codePoint1)+String.fromCharCode(codePoint2) ;
+console.log("Exercise 2: "+combinedString) ;
+//Exercise 3
+let inputStringEx3 = "Cat";
+let index1 = 0;
+let index2 = 2;
+let codePointDifference = Math.abs(inputStringEx3.charCodeAt(index1) - inputStringEx3.charCodeAt(index2));
+console.log("Exercise 3: " + codePointDifference);
+//The answer for exercise 3 is incorrect. The correct answer is 49,
+
 
 //Starter Code
 // Task 1
 let inputString1 = "Code";
-let firstCodePoint; // Your code here
-let thirdCodePoint; // Your code here
+let firstCodePoint = inputString1.charCodeAt(0); // Your code here
+let thirdCodePoint = inputString1.charCodeAt(2); // Your code here
+
 
 // Task 2
-let wordFromCodePoints; // Your code here
+let wordFromCodePoints = String.fromCharCode(72)+String.fromCharCode(101)+String.fromCharCode(108)+String.fromCharCode(108) ;// Your code here
 
 // Task 3
 let inputString2 = "Launch";
-let swappedString; // Your code here
+let codeP1 = inputString2.charCodeAt(0) ;
+let codeP2 = inputString2.charCodeAt(5) ;
+let swappedString= String.fromCharCode(codeP2)+"aunc"+String.fromCharCode(codeP1) ;  // Your code here
 
 // Log all results
 console.log({
